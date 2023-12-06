@@ -1,10 +1,24 @@
 pipeline {
     agent any
     stages {
-    stages {
-        stage('PULL-PHASE') {
+        stage('PULL-STAGE') {
             steps {
-                sh 'git clone https://github.com/RohitKakde27/demo-java.git'
+                echo 'Hello World'
+            }
+        }
+        stage('BUILD-STAGE') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('TEST') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('DEPLOY') {
+            steps {
+                echo 'Hello World'
             }
         }
     }
