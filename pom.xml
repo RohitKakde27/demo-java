@@ -25,6 +25,18 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+	<jdk.version>1.8</jdk.version>
+	<spring.version>5.1.2.RELEASE</spring.version>
+	<junit.version>4.11</junit.version>
+	<log4j.version>1.2.17</log4j.version>
+	<sonar.host.url>http://172.178.123.4:9000//</sonar.host.url>
+	<sonar.login>squ_730846f9034f6d58b479bcb5b0ce15d65b61c5ec</sonar.login>
+	<sonar.profile>admin</sonar.profile>
+	<!-- <sonar.password>abc</sonar.password> -->
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -36,18 +48,7 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
-    </dependency><properties>
-		<jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://172.178.123.4:9000//</sonar.host.url>
-		<sonar.login>squ_730846f9034f6d58b479bcb5b0ce15d65b61c5ec</sonar.login>
-		<sonar.profile>admin</sonar.profile>
-		<!-- <sonar.password>abc</sonar.password> -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+    </dependency>
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
