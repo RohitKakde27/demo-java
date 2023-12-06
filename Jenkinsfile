@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('PULL-STAGE') {
             steps {
-                echo 'Hello World'
+               git credentialsId: '871b9632-60f1-4b32-8a2a-575e0506be4c', url: 'https://github.com/RohitKakde27/demo-java.git'
             }
         }
         stage('BUILD-STAGE') {
