@@ -13,7 +13,7 @@ pipeline {
         }
         stage('TEST') {
             steps {
-              withSonarQubeEnv('SonarQube_server') {
+              withSonarQubeEnv('SonarQube_ID') {
                 sh 'mvn clean package sonar:sonar'
               }
 
