@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('PULL-PHASE') {
             steps {
-                echo 'Hello World'
+                git clone https://github.com/RohitKakde27/demo-java.git
             }
         }
     }
